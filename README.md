@@ -6,9 +6,9 @@ Program that calculates the smallest number of multiplications that could be use
 
 Improved algorithm of finding number of multiplications:
 
-'pow(x, 1) = x         
-pow(x, n) = pow(x*x, n/2) [n even]
-          = x * pow(x*x, (n-1)/2) [odd]'
+pow(x, 1) = x         
+pow(x, n) = pow(x * x, n/2) [n even] or 
+          = x * pow(x * x, (n-1)/2) [odd]
           
 It is not always optimal.
 For example, it computes a 15 via the sequence x, x2, x3, x6, x7, x14, x15 in 6 steps
